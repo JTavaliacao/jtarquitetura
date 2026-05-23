@@ -1,20 +1,20 @@
-{
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "astro",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "redirects": [
-    { "source": "/sobre", "destination": "/#sobre", "permanent": true },
-    { "source": "/sobre/", "destination": "/#sobre", "permanent": true },
-    { "source": "/contato", "destination": "/#contato", "permanent": true },
-    { "source": "/contato/", "destination": "/#contato", "permanent": true },
-    { "source": "/avaliacao-residencial", "destination": "/#servicos", "permanent": true },
-    { "source": "/avaliacao-residencial/", "destination": "/#servicos", "permanent": true },
-    { "source": "/avaliacao-comercial", "destination": "/#servicos", "permanent": true },
-    { "source": "/avaliacao-comercial/", "destination": "/#servicos", "permanent": true },
-    { "source": "/avaliacao-para-financiamento", "destination": "/#servicos", "permanent": true },
-    { "source": "/avaliacao-para-financiamento/", "destination": "/#servicos", "permanent": true },
-    { "source": "/em-breve", "destination": "/", "permanent": true },
-    { "source": "/em-breve/", "destination": "/", "permanent": true }
-  ]
-}
+// @ts-check
+import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
+import vercel from '@astrojs/vercel';
+
+export default defineConfig({
+  site: 'https://www.jtarquitetura.com.br',
+  trailingSlash: 'never',
+  output: 'server',
+  adapter: vercel(),
+  integrations: [sitemap()],
+  build: {
+    format: 'directory',
+  },
+  vite: {
+    css: {
+      devSourcemap: true,
+    },
+  },
+});

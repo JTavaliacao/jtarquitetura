@@ -1,12 +1,20 @@
-# Cópia para desenvolvimento local — RENOMEIE para .env (sem .example) e preencha
-# Este arquivo está no .gitignore, nunca é comitado
-
-ADMIN_EMAIL=jessicadeabreuarquitetura@gmail.com
-ADMIN_PASSWORD=
-SESSION_SECRET=
-
-GITHUB_TOKEN=
-GITHUB_OWNER=infra-construmoove
-GITHUB_REPO=alunas-pri-nunes-sites
-GITHUB_BRANCH=main
-GITHUB_PATH=jessica-abreu
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "astro",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/sobre", "destination": "/#sobre", "permanent": true },
+    { "source": "/sobre/", "destination": "/#sobre", "permanent": true },
+    { "source": "/contato", "destination": "/#contato", "permanent": true },
+    { "source": "/contato/", "destination": "/#contato", "permanent": true },
+    { "source": "/avaliacao-residencial", "destination": "/#servicos", "permanent": true },
+    { "source": "/avaliacao-residencial/", "destination": "/#servicos", "permanent": true },
+    { "source": "/avaliacao-comercial", "destination": "/#servicos", "permanent": true },
+    { "source": "/avaliacao-comercial/", "destination": "/#servicos", "permanent": true },
+    { "source": "/avaliacao-para-financiamento", "destination": "/#servicos", "permanent": true },
+    { "source": "/avaliacao-para-financiamento/", "destination": "/#servicos", "permanent": true },
+    { "source": "/em-breve", "destination": "/", "permanent": true },
+    { "source": "/em-breve/", "destination": "/", "permanent": true }
+  ]
+}
