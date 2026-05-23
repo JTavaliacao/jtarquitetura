@@ -1,0 +1,17 @@
+# Variáveis de ambiente — Site JT Arquitetura e Urbanismo
+# Configurar no Vercel (Settings -> Environment Variables)
+# NÃO comitar valores reais. Este arquivo é apenas modelo.
+
+# === Login do /admin (a aluna usa para entrar no painel) ===
+ADMIN_EMAIL=jesssica.a.tardivo@gmail.com
+ADMIN_PASSWORD=DEFINIR_NO_VERCEL
+
+# === Segredo HMAC do cookie de sessão (48 bytes random base64url) ===
+SESSION_SECRET=DEFINIR_NO_VERCEL
+
+# === GitHub (publicação dos posts) ===
+GITHUB_TOKEN=DEFINIR_NO_VERCEL
+GITHUB_OWNER=infra-construmoove
+GITHUB_REPO=alunas-pri-nunes-sites
+GITHUB_BRANCH=main
+GITHUB_PATH=jt-arquitetura

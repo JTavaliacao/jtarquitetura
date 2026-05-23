@@ -1,0 +1,12 @@
+# Cópia para desenvolvimento local — RENOMEIE para .env (sem .example) e preencha
+# Este arquivo está no .gitignore, nunca é comitado
+
+ADMIN_EMAIL=jessicadeabreuarquitetura@gmail.com
+ADMIN_PASSWORD=
+SESSION_SECRET=
+
+GITHUB_TOKEN=
+GITHUB_OWNER=infra-construmoove
+GITHUB_REPO=alunas-pri-nunes-sites
+GITHUB_BRANCH=main
+GITHUB_PATH=jessica-abreu
